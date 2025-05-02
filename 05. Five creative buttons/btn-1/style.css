@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+  padding: 2rem 5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+a::before{
+  content: "Downlaod";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: antiquewhite;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+a:hover::before{
+  transform: translateY(0);
+}
